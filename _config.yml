@@ -1,0 +1,8 @@
+pygments: true
+permalink: pretty
+markdown: maruku
+maruku:
+    use-tex: false
+    use-divs: true
+
+url: http://localhost:4000
