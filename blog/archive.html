@@ -5,4 +5,12 @@ layout: blog
 
 <h1>Blog Archive</h1>
 
-TODO
+<ul>
+    {% for post in site.posts %}
+        <li>
+        	<a href="{{ post.url }}">{{ post.title }}</a>
+        	&nbsp;//
+        	<span class="meta">{{ post.date | date_to_string }}</span>
+    	</li>
+    {% endfor %}
+</ul>
