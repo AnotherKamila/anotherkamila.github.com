@@ -1,7 +1,0 @@
----
-layout: default
-part: projects
----
-
-[part: projects]
-{{ content }}

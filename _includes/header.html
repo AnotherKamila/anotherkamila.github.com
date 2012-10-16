@@ -1,4 +1,23 @@
 <header class="sitewide">
-	<h1><a href="/{{ page.part }}">anotherkamila/<span class="hl">{{ page.part }}</span></a></h1>
-	<span class="todo">TODO make a pretty header here</span>
+	<h1>
+		{% if page.header_html %}
+			{{ page.header_html }}
+		{% else %}
+			<a href="/{{ page.part }}">anotherkamila/<span class="hl">{{ page.part }}</span></a>
+		{% endif %}
+	</h1>
+	<nav>
+		{% if page.header_nav %}
+			{% for item in page.header_nav %}
+				{{ item }}
+			{% endfor %}
+		{% else %}
+			<a href='/{{ page.part }}'>{{ page.part }} home</a>
+			{% for item in page.add_to_nav %}
+				<a href="{{ item[1] }}">{{ item[0] }}</a>
+			{% endfor %}
+			|
+			<a href='/'>home</a>
+		{% endif %}
+	</nav>
 </header>
