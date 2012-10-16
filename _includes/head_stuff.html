@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="/assets/base.css" />
+{% if page.style %}
+	{% for stylesheet in page.style %}
+		<link rel="stylesheet" href="/assets/{{ stylesheet }}" />
+	{% endfor %}
+{% endif %}

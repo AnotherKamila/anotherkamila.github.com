@@ -1,0 +1,138 @@
+body {
+	background: #333 url(bgpat.gif) repeat;
+	color: #fff;
+}
+p a, p a:visited {
+	color: #eea8ff;
+	text-decoration: none;
+}
+p a:hover, p a:active, p a:focus {
+	border-bottom: 1px solid;
+}
+hr {
+	border: 0;
+	border-bottom: 1px solid #fff;
+	width: 80%;
+	margin: 40px auto;
+}
+#wrapper {
+	min-height: 500px;
+}
+#cont {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -130px;
+	z-index: 0;
+}
+header {
+	height: 202px;
+	background: transparent url(stripbg.png) repeat-x;
+	padding: 1px 0;
+	text-align: center;
+	z-index: 1;
+}
+header h1 {
+	color: #999;
+	text-shadow: 0 -3px 0 #000;
+	font-size: 58px;
+	padding-top: 15px;
+	letter-spacing: -0.025em; /* argh! */
+}
+header h1 span {
+	color: #fff;
+}
+
+#cont nav {
+	width: 600px;
+	padding-left: 45px;
+	margin: 0 auto;
+	position: relative;
+	z-index: -1;
+}
+#cont nav ul {
+	list-style: none;
+	margin: 0; padding: 0;
+}
+#cont nav ul li {
+	display: block;
+	float: left;
+	width: 115px;
+	overflow: visible;
+	-moz-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+#cont nav ul li a {
+	display: block;
+	width: 240px;
+	padding: 7px 0 7px 9px;
+	margin-left: -20px;
+	font-size: 24px;
+	color: #fff;
+	letter-spacing: -0.025em; /* argh! */
+	text-decoration: none;
+	-moz-box-shadow: -2px 4px 6px #000;
+	-webkit-box-shadow: -2px 4px 6px #000;
+	box-shadow: -2px 4px 6px #000;
+	-moz-transition: margin 0.2s ease-out;
+	-webkit-transition: margin 0.2s ease-out;
+	-o-transition: margin 0.2s ease-out;
+	-ms-transition: margin 0.2s ease-out;
+	transition: margin 0.2s ease-out;
+}
+#cont nav ul li a:hover {
+	margin-left: -60px;
+}
+
+#cont nav ul li:nth-child(1) a {
+	background: -moz-linear-gradient(left, #000000 0%, #00b4ff 75%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(75%,#00b4ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #000000 0%,#00b4ff 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #000000 0%,#00b4ff 75%); /* Opera 11.10+ */
+	background: linear-gradient(left, #000000 0%,#00b4ff 75%); /* W3C */
+}
+#cont nav ul li:nth-child(2) a {
+	background: -moz-linear-gradient(left, #000000 0%, #18ff00 75%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(75%,#18ff00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #000000 0%,#18ff00 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #000000 0%,#18ff00 75%); /* Opera 11.10+ */
+	background: linear-gradient(left, #000000 0%,#18ff00 75%); /* W3C */
+}
+#cont nav ul li:nth-child(3) a {
+	background: -moz-linear-gradient(left, #000000 0%, #ffcc00 75%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(75%,#ffcc00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #000000 0%,#ffcc00 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #000000 0%,#ffcc00 75%); /* Opera 11.10+ */
+	background: linear-gradient(left, #000000 0%,#ffcc00 75%); /* W3C */
+}
+#cont nav ul li:nth-child(4) a {
+	background: -moz-linear-gradient(left, #000000 0%, #ff001e 75%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(75%,#ff001e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #000000 0%,#ff001e 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #000000 0%,#ff001e 75%); /* Opera 11.10+ */
+	background: linear-gradient(left, #000000 0%,#ff001e 75%); /* W3C */
+}
+#cont nav ul li:nth-child(5) a {
+	background: -moz-linear-gradient(left, #000000 0%, #d200ff 75%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#000000), color-stop(75%,#d200ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #000000 0%,#d200ff 75%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #000000 0%,#d200ff 75%); /* Opera 11.10+ */
+	background: linear-gradient(left, #000000 0%,#d200ff 75%); /* W3C */
+}
+
+footer.sitewide {
+	padding: 0.8em 0;
+}
+.sitewide nav,
+.sitewide nav a {
+	color: #ccc;
+	text-shadow:  0 0 1px rgba(0,0,0,0.5), 0 0 6px #fff;
+}
+.sitewide nav a:hover {
+	text-shadow: 0 -2px 1px #000;
+}
+
+a:focus {
+	outline: 1px solid #eea8ff;
+}
