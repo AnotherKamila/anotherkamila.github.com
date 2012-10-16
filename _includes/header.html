@@ -1,4 +1,5 @@
 <header class="sitewide">
+
 	<h1>
 		{% if page.header_html %}
 			{{ page.header_html }}
@@ -20,4 +21,10 @@
 			<a href='/'>home</a>
 		{% endif %}
 	</nav>
+
+	{% if page.forkme %}
+		<a href="http://github.com/{{ page.forkme }}"><img style="position: absolute; top: 0; right: 0; z-index: -1" src="assets/forkme.png" alt="Fork me on GitHub"></a>
+	{% endif %}
+
+	<div class="sawtooth"></div>
 </header>
