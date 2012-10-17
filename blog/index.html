@@ -5,9 +5,27 @@ layout: blog
 
 <ul>
     {% for post in site.posts %}
-        <li>
-        	<a href="{{ post.url }}">{{ post.title }}</a>
-        	<span class="meta">{{ post.date | date_to_string }}</span>
-    	</li>
+    	<article>
+
+    		<header>
+    			<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    			<span class="meta date">{{ post.date | date: "<span class='hl'>%a,</span><br /> %d %b '%y" }}</span>
+    			<span class="meta cats">
+    					{% if post.categories == empty %}
+    						not categorized
+    					{% else %}
+    						filed under {{ post.categories | sentence }}
+    					{% endif %}
+    			</span>
+    		</header>
+
+        	{% if post.excerpt %}
+        		{{ post.excerpt | markdownify }}
+        		<a class="navlink right" href="{{ post.url }}">more →</a>
+        	{% else %}
+        		{{ post.content }}
+        	{% endif %}
+
+        </article>
     {% endfor %}
 </ul>
