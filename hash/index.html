@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Simple Hasher</title>
+
+		<style>
+		input[type=text] { width: 100%; }
+		</style>
+
+		<script>
+		/* http://github.com/h2non/jsHashes */
+		window.Hashes={}; Hashes.Helpers={};
+		Hashes.Helpers.utf8Encode=function(a){var b="";var c=-1;var d,e;while(++c<a.length){d=a.charCodeAt(c);e=c+1<a.length?a.charCodeAt(c+1):0;if(55296<=d&&d<=56319&&56320<=e&&e<=57343){d=65536+((d&1023)<<10)+(e&1023);c++}if(d<=127)b+=String.fromCharCode(d);else if(d<=2047)b+=String.fromCharCode(192|d>>>6&31,128|d&63);else if(d<=65535)b+=String.fromCharCode(224|d>>>12&15,128|d>>>6&63,128|d&63);else if(d<=2097151)b+=String.fromCharCode(240|d>>>18&7,128|d>>>12&63,128|d>>>6&63,128|d&63)}return b}
+		Hashes.SHA256=function(a){function e(a){a=d?Hashes.Helpers.utf8Encode(a):a;return m(A(l(a),a.length*8))}function f(a,b){a=d?Hashes.Helpers.utf8Encode(a):a;b=d?Hashes.Helpers.utf8Encode(b):b;var c=l(a);if(c.length>16)c=A(c,a.length*8);var e=Array(16),f=Array(16);for(var g=0;g<16;g++){e[g]=c[g]^909522486;f[g]=c[g]^1549556828}var h=A(e.concat(l(b)),512+b.length*8);return m(A(f.concat(h),512+256))}function g(a){try{b}catch(c){b=false}var d=b?"0123456789ABCDEF":"0123456789abcdef";var e="";var f;for(var g=0;g<a.length;g++){f=a.charCodeAt(g);e+=d.charAt(f>>>4&15)+d.charAt(f&15)}return e}function h(a){try{c}catch(b){c="="}var d="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";var e="";var f=a.length;for(var g=0;g<f;g+=3){var h=a.charCodeAt(g)<<16|(g+1<f?a.charCodeAt(g+1)<<8:0)|(g+2<f?a.charCodeAt(g+2):0);for(var i=0;i<4;i++){if(g*8+i*6>a.length*8)e+=c;else e+=d.charAt(h>>>6*(3-i)&63)}}return e}function i(a,b){var c=b.length;var d=Array();var e,f,g,h;var i=Array(Math.ceil(a.length/2));for(e=0;e<i.length;e++){i[e]=a.charCodeAt(e*2)<<8|a.charCodeAt(e*2+1)}while(i.length>0){h=Array();g=0;for(e=0;e<i.length;e++){g=(g<<16)+i[e];f=Math.floor(g/c);g-=f*c;if(h.length>0||f>0)h[h.length]=f}d[d.length]=g;i=h}var j="";for(e=d.length-1;e>=0;e--)j+=b.charAt(d[e]);var k=Math.ceil(a.length*8/(Math.log(b.length)/Math.log(2)));for(e=j.length;e<k;e++)j=b[0]+j;return j}function j(a){var b="";for(var c=0;c<a.length;c++)b+=String.fromCharCode(a.charCodeAt(c)&255,a.charCodeAt(c)>>>8&255);return b}function k(a){var b="";for(var c=0;c<a.length;c++)b+=String.fromCharCode(a.charCodeAt(c)>>>8&255,a.charCodeAt(c)&255);return b}function l(a){var b=Array(a.length>>2);for(var c=0;c<b.length;c++)b[c]=0;for(var c=0;c<a.length*8;c+=8)b[c>>5]|=(a.charCodeAt(c/8)&255)<<24-c%32;return b}function m(a){var b="";for(var c=0;c<a.length*32;c+=8)b+=String.fromCharCode(a[c>>5]>>>24-c%32&255);return b}function n(a,b){return a>>>b|a<<32-b}function o(a,b){return a>>>b}function p(a,b,c){return a&b^~a&c}function q(a,b,c){return a&b^a&c^b&c}function r(a){return n(a,2)^n(a,13)^n(a,22)}function s(a){return n(a,6)^n(a,11)^n(a,25)}function t(a){return n(a,7)^n(a,18)^o(a,3)}function u(a){return n(a,17)^n(a,19)^o(a,10)}function v(a){return n(a,28)^n(a,34)^n(a,39)}function w(a){return n(a,14)^n(a,18)^n(a,41)}function x(a){return n(a,1)^n(a,8)^o(a,7)}function y(a){return n(a,19)^n(a,61)^o(a,6)}function A(a,b){var c=new Array(1779033703,-1150833019,1013904242,-1521486534,1359893119,-1694144372,528734635,1541459225);var d=new Array(64);var e,f,g,h,i,j,k,l;var m,n,o,v;a[b>>5]|=128<<24-b%32;a[(b+64>>9<<4)+15]=b;for(m=0;m<a.length;m+=16){e=c[0];f=c[1];g=c[2];h=c[3];i=c[4];j=c[5];k=c[6];l=c[7];for(n=0;n<64;n++){if(n<16)d[n]=a[n+m];else d[n]=B(B(B(u(d[n-2]),d[n-7]),t(d[n-15])),d[n-16]);o=B(B(B(B(l,s(i)),p(i,j,k)),z[n]),d[n]);v=B(r(e),q(e,f,g));l=k;k=j;j=i;i=B(h,o);h=g;g=f;f=e;e=B(o,v)}c[0]=B(e,c[0]);c[1]=B(f,c[1]);c[2]=B(g,c[2]);c[3]=B(h,c[3]);c[4]=B(i,c[4]);c[5]=B(j,c[5]);c[6]=B(k,c[6]);c[7]=B(l,c[7])}return c}function B(a,b){var c=(a&65535)+(b&65535);var d=(a>>16)+(b>>16)+(c>>16);return d<<16|c&65535}var b=a&&typeof a.uppercase=="boolean"?a.uppercase:false;var c=a&&typeof a.pad=="string"?a.pda:"=";var d=a&&typeof a.utf8=="boolean"?a.utf8:true;this.hex=function(a){return g(e(a))};this.b64=function(a){return h(e(a))};this.any=function(a,b){return i(e(a),b)};this.hex_hmac=function(a,b){return g(f(a,b))};this.b64_hmac=function(a,b){return h(f(a,b))};this.any_hmac=function(a,b,c){return i(f(a,b),c)};this.vm_test=function(){return hex("abc").toLowerCase()=="900150983cd24fb0d6963f7d28e17f72"};this.setUpperCase=function(a){if(typeof a=="boolean")b=a;return this};this.setPad=function(a){if(typeof a!="undefined")c=a;return this};this.setUTF8=function(a){if(typeof a=="boolean")d=a;return this};var z=new Array(1116352408,1899447441,-1245643825,-373957723,961987163,1508970993,-1841331548,-1424204075,-670586216,310598401,607225278,1426881987,1925078388,-2132889090,-1680079193,-1046744716,-459576895,-272742522,264347078,604807628,770255983,1249150122,1555081692,1996064986,-1740746414,-1473132947,-1341970488,-1084653625,-958395405,-710438585,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,-2117940946,-1838011259,-1564481375,-1474664885,-1035236496,-949202525,-778901479,-694614492,-200395387,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,-2067236844,-1933114872,-1866530822,-1538233109,-1090935817,-965641998);return this}
+		</script>
+		
+	</head>
+	<body>
+		<noscript>This thing requires JavaScript -- that's the point.</noscript>
+
+		<form>
+			<input type="text" id="x" placeholder="text you want to hash" /><br />
+			<input type="submit" id="s" value="SHA-256 hash" /><br />
+			<input type="text" id="r" placeholder="result" /><br />
+		</form>
+
+		<script>
+		$ = document.getElementById.bind(document);
+
+		var hashit = function() {
+			var alg = 'SHA256';
+			$('r').value = (new Hashes[alg]()).hex($('x').value);
+		}
+		$('s').addEventListener('click', function(e) { e.preventDefault(); hashit(); }, false);
+		</script>
+
+	</body>
+<html>
