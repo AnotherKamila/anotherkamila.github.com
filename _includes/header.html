@@ -13,11 +13,13 @@
 				{{ item }}
 			{% endfor %}
 		{% else %}
-			<a href='/{{ page.part }}'>{{ page.part }} home</a>
+			{% if page.part %}
+				<a href='/{{ page.part }}'>{{ page.part }} home</a>
+			{% endif %}
 			{% for item in page.add_to_nav %}
 				<a href="{{ item[1] }}">{{ item[0] }}</a>
 			{% endfor %}
-			|
+			{% if page.part or page.add_to_nav %}|{% endif %}
 			<a href='/'>home</a>
 		{% endif %}
 	</nav>
