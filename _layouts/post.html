@@ -2,7 +2,7 @@
 layout: blog
 ---
 
-[single post layout]
 <h1>{{ page.title }}</h1>
+<span class="meta">on {{ page.date | date: "%A, %d %B %Y" }}{% unless page.categories == empty %}; filed under {{ page.categories | sentence }}{% endunless %}</span>
 
 {{ content }}
