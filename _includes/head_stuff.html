@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="/assets/base.css" />
+{% if page.syntax_highlight %}
+	<link rel="stylesheet" href="/assets/hl.min.css">
+{% endif %}
 {% if page.style %}
 	{% for stylesheet in page.style %}
 		<link rel="stylesheet" href="/assets/{{ stylesheet }}" />
