@@ -14,7 +14,7 @@ layout: blog
     					{% if post.categories == empty %}
     						not categorized
     					{% else %}
-    						filed under {{ post.categories | sentence }}
+    						filed under {{ post.categories | array_to_sentence_string }}
     					{% endif %}
     			</span>
     		</header>
