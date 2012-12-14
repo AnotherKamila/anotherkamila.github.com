@@ -302,3 +302,8 @@ section {
 .hanging a:hover {
 	margin-top: 15px;
 }
+
+
+#disqus_thread {
+	margin-top: 3.2em;
+}
