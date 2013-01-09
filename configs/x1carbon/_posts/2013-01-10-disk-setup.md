@@ -2,6 +2,16 @@
 title: Disk setup
 tagline: partitions, filesystems, UEFI+BIOS boot
 layout: configs_post
+excerpt: |
+    What I wanted:
+
+    - a UEFI boot without a separate bootloader (i.e. bootstrap by the kernel EFISTUB loader)
+    - a backup BIOS boot with GRUB(2) just in case (it has proved useful a few times already)
+    - Btrfs (yeah, I will write about my backup scheme one day :D)
+
+    What I did not want:
+
+    - dualboot ;-)
 ---
 
 #### This poor draft of an article is not finished yet! I am just publishing it in order to force myself into writing it before I forget everything.
@@ -26,11 +36,11 @@ For UEFI boot, the GPT partition scheme is necessary. Therefore one needs to use
 
 Here is how I set up mine:
 
-	Number  Start (sector)    End (sector)  Size       Code  Name
-	   1            2048          264191   128.0 MiB   EF00  EFI System
-	   2          264192          266239   1024.0 KiB  EF02  BIOS boot partition
-	   3          266240       482611199   230.0 GiB   8300  Linux filesystem
-	   4       482611200       500118158   8.3 GiB     8200  Linux swap
+    Number  Start (sector)    End (sector)  Size       Code  Name
+       1            2048          264191   128.0 MiB   EF00  EFI System
+       2          264192          266239   1024.0 KiB  EF02  BIOS boot partition
+       3          266240       482611199   230.0 GiB   8300  Linux filesystem
+       4       482611200       500118158   8.3 GiB     8200  Linux swap
 
 
 
