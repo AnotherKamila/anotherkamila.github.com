@@ -2,13 +2,14 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>{% if page.title %}{{ page.title }} | {% endif %}AnotherKamila @ GitHub</title>
+        <title>{% if page.title %}{{ page.title }} | {% endif %}AnotherKamila @ Github</title>
         <meta name="author" content="Kamila Součková">
+        <link rel="alternate" type="application/atom+xml" title="AnotherKamila @ Github (Atom 1.0)" href="{{ site.url }}/feed.atom" />
         {% include head_stuff.html %}
     </head>
     <body>
 
         {{ content }}
-        
+
     </body>
 </html>
