@@ -215,9 +215,14 @@ ul, ol {
 	left: 0;
 	top: 3.9em;
 }
-.links-list .meta {
+.posts-list .meta {
 	position: relative;
 	top: -0.2em;
+}
+p.tagline {
+	margin: 0;
+	color: #777;
+	font-style: italic;
 }
 
 .navlink {
@@ -232,15 +237,30 @@ p {
 	margin: .7em 0;
 }
 
+.content h2 {
+	font-size: 1.3em;
+}
+
 .content ul {
 	list-style: none;
 	list-style-type: none;
 	margin: 0; padding: 0;
 }
 .content ul li:before {
+	position: absolute;
+	display: inline-block;
+	left: .3em;
 	content: '→';
 	color: #777;
-	margin-right: 0.4em;
+}
+.content ul li {
+	padding-left: 1.6em;
+}
+.posts-list a {
+	color: #333;
+}
+.posts-list a .meta {
+	color: #777;
 }
 
 code.shell,

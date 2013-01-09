@@ -1,8 +1,27 @@
 ---
-title: My Config Files
+title: My Configuration
 layout: configs
 ---
 
-<p>This page will contain various config files, logs of what I have done to my poor devices etc. But first I will have to find the time to make this page.</p>
+<section>
+	<h1>Dotfiles</h1>
 
-<p>For now, check out my fancy sometimes-even-updated configs repository at <a href="http://github.com/AnotherKamila/dotfiles">github.com/AnotherKamila/dotfiles</a>.</p>
+	<p>My configs repository is available at <a href="https://github.com/AnotherKamila/dotfiles">github.com/AnotherKamila/dotfiles</a>.</p>
+	<p>I clone this repo on every machine I use regularly, although it contains also X-related configuration such as the window manager.</p>
+</section>
+
+<section>
+	<h1>My awesome laptop configuration</h1>
+
+	<p class="tagline">How I have configured my fancy X1 Carbon (sans dotfiles, since most of those are in the repo above), with hopefully understandable descriptions rather than just the configuration files</p>
+
+	<h2>Table of Contents:</h2>
+	<ul class="posts-list">
+		{% for post in site.categories.x1carbon %}
+        <li>
+        	<a href="{{ post.url }}">{{ post.title }} &nbsp;// <span class="meta">{{ post.date | date_to_string }}</span></a>
+        	<p class="tagline">{{ post.tagline }}</p>
+    	</li>
+		{% endfor %}
+	</ul>
+</section>
