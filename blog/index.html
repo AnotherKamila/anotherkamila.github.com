@@ -19,9 +19,12 @@ layout: blog
     			</span>
     		</header>
 
+            {% if post.tagline %}
+                <p class="tagline">{{ post.tagline }}</p>
+            {% endif %}
         	{% if post.excerpt %}
         		{{ post.excerpt | markdownify }}
-        		<a class="navlink right" href="{{ post.url }}">more →</a>
+        		<a class="navlink right" href="{{ post.url }}"><span style="opacity:0.2">–</span> <span style="opacity:0.4">–</span> <span style="opacity:0.6">–</span> <span style="opacity:0.8">–</span> – – – – – – – more →</a>
         	{% else %}
         		{{ post.content }}
         	{% endif %}
