@@ -1,7 +1,6 @@
 ---
 title: My Configs are Out!
 layout: post
-categories: [ config ]
 ---
 
 I have finally managed to start cleaning up my dotfiles. The repository is at
