@@ -69,6 +69,10 @@ To edit the EFI boot menu, one needs to boot in EFI mode[^boot_chicken]. Then I 
 and used `efibootmgr` to add the boot menu entry (including the kernel commandline, since I have no
 intermediate bootstrapping something in between the kernel and the firmware).
 
+Note for the future me: this is the `efibootmgr` command:
+
+    efibootmgr -c -g -d /dev/sda -p1 -L ArchLinux -l "\EFI\arch\vmlinuz-linux.efi" -u "`cat /boot/efi/EFI/arch/linux.conf`"
+
 I also added an [EFI shell](https://wiki.archlinux.org/index.php/UEFI#UEFI_Shell) just in case. It
 was a good idea :P
 
