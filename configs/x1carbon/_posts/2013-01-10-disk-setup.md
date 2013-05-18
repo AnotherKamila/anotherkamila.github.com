@@ -101,4 +101,26 @@ first.
 Filesystem
 ----------
 
-TODO finish this!
+My whole system besides `/boot/{EFI,GRUB}` resides on one [btrfs](https://btrfs.wiki.kernel.org/‎)
+partition, with different subvolumes for `/`, `/home` and `/var`. With the awesome snapshot
+capabilities of btrfs, this allows for neat rollback in case an update breaks something, makes
+online backup terribly simple and just generally rocks.[^btrfs_scripts]
+
+I chose LZO compression, as some benchmark out there claimed btrfs with LZO was the fastest option
+on SSDs similar to mine. I might run my own benchmarks one day.
+
+[^btrfs_scripts]: I will release my fancy scripts at some point in the future.
+
+Here is my `/etc/fstab`:
+
+    # <file system> <dir>     <type>  <options>             <dump>  <pass>
+
+    LABEL=btr       /         btrfs   rw,noatime,ssd,space_cache,compress=lzo,subvol=root       0 1
+    LABEL=btr       /var      btrfs   rw,noatime,ssd,space_cache,compress=lzo,subvol=var        0 2
+    LABEL=btr       /home     btrfs   rw,noatime,ssd,space_cache,compress=lzo,subvol=home       0 2
+    tmpfs           /tmp      tmpfs   nodev,nosuid,size=5G                                      0 0
+    LABEL=swap      none      swap    defaults                                                  0 0
+
+    LABEL=btr       /btrroot  btrfs   noauto,rw,noatime,ssd,space_cache,compress=lzo,subvolid=0 0 2
+
+    UUID=4ECD-9824  /boot/efi vfat    rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro 0 2
