@@ -161,6 +161,14 @@ ul, ol {
 	padding: 0 0 0 40px;
 }
 
+a[rel=footnote], a[rev=footnote] {
+	border-bottom: none;
+	font-style: italic;
+}
+a[rel=footnote]:hover, a[rev=footnote]:hover {
+	border-bottom: none;
+	color: #0af;
+}
 
 .content h1 {
 	display: block;
