@@ -327,3 +327,35 @@ section {
 #disqus_thread {
 	margin-top: 3.2em;
 }
+
+ul.projects-list li {
+	display: block;
+	padding: .8em 2.5%;
+	height: 48px;
+}
+ul.projects-list li .icon {
+	float: left;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+}
+ul.projects-list li a h1 {
+	display: inline-block;
+	width: 70%;
+	height: 48px;
+	line-height: 48px;
+	margin: 0 .7em;
+	font-size: 1.4em;
+	-moz-transition: color .4s linear;
+	-webkit-transition: color .4s linear;
+	-o-transition: color .4s linear;
+	transition: color .4s linear;
+}
+ul.projects-list li a:hover h1 { color: #0af; }
+ul.projects-list li:before {
+	position: auto;
+	content: none;
+}
+ul.projects-list a {
+	border-bottom: none;
+}

@@ -73,6 +73,8 @@ Note for the future me: this is the `efibootmgr` command:
 
     efibootmgr -c -g -d /dev/sda -p1 -L ArchLinux -l "\EFI\arch\vmlinuz-linux.efi" -u "`cat /boot/efi/EFI/arch/linux.conf`"
 
+(Note for the past me: Thanks! :D)
+
 I also added an [EFI shell](https://wiki.archlinux.org/index.php/UEFI#UEFI_Shell) just in case. It
 was a good idea :P
 

@@ -1,5 +1,5 @@
 ---
-title: Website Announcement: The configs section might grow!
+title: Website Announcement - The configs section might grow!
 layout: post
 ---
 
