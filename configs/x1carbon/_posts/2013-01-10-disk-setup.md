@@ -113,7 +113,7 @@ on SSDs similar to mine. I might run my own benchmarks one day.
 
 Here is my `/etc/fstab`:
 
-    # <file system> <dir>     <type>  <options>             <dump>  <pass>
+    # <file system> <dir>     <type>  <options>                                                 <dump> <pass>
 
     LABEL=btr       /         btrfs   rw,noatime,ssd,space_cache,compress=lzo,subvol=root       0 1
     LABEL=btr       /var      btrfs   rw,noatime,ssd,space_cache,compress=lzo,subvol=var        0 2
