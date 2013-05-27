@@ -1,6 +1,6 @@
 ---
 title: So That's Why I Call Myself a Dreamer
-layout: blog
+layout: post
 ---
 
 I love science. I am planning to become a computer scientist (and a good one, too). Ever since I remember have I been fascinated by science and technology: I have spent countless days immersed in books and articles, feeling a strange kind of joy as my understanding grew deeper. I dare say my knowledge of physics is quite good for a non-physicist, and I’m not that bad at astronomy and other natural sciences, too.
