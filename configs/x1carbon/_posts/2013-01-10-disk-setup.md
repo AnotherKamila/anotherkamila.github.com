@@ -2,16 +2,6 @@
 title: Disk setup
 tagline: partitions, filesystems, UEFI+BIOS boot
 layout: configs_post
-excerpt: |
-    What I wanted:
-
-    - a UEFI boot without a separate bootloader (i.e. bootstrap by the kernel EFISTUB loader)
-    - a backup BIOS boot with GRUB(2) just in case (it has proved useful a few times already)
-    - Btrfs (yeah, I will write about my backup scheme one day :D)
-
-    What I did not want:
-
-    - dualboot ;-)
 ---
 
 #### This poor draft of an article is not finished yet! I am just publishing it in order to force myself into writing it before I forget everything.
@@ -27,6 +17,8 @@ What I wanted:
 What I did not want:
 
 - dualboot ;-)
+
+<!--more-->
 
 Partition Table
 ---------------

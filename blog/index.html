@@ -22,8 +22,8 @@ layout: blog
             {% if post.tagline %}
                 <p class="tagline">{{ post.tagline }}</p>
             {% endif %}
-        	{% if post.excerpt %}
-        		{{ post.excerpt | markdownify }}
+        	{% if post.content contains '<!--more-->' %}
+        		{{ post.content | split:'<!--more-->' | first }}
         		<a class="navlink right" href="{{ post.url }}"><span style="opacity:0.2">–</span> <span style="opacity:0.4">–</span> <span style="opacity:0.6">–</span> <span style="opacity:0.8">–</span> – – – – – – – more →</a>
         	{% else %}
         		{{ post.content }}

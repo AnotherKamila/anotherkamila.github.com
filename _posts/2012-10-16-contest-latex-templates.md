@@ -3,13 +3,12 @@ title: My awesome contest LaTeX templates
 layout: post
 categories: [ latex ]
 syntax_highlight: true
-excerpt: |
-    The time has come! Finally a new year with a lot of correspondence contests is here!
-    Here, a present for my contest-hungry peers: my LaTeX template, which I am so proud of.
 ---
 
 The time has come! Finally a new year with a lot of correspondence contests is here!
 Here, a present for my contest-hungry peers: my LaTeX template, which I am so proud of.
+
+<!--more-->
 
 (Actually, there are several versions depending on what exactly it is; for now I am publishing the
 KSP version.)
