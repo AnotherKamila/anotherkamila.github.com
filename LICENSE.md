@@ -1,6 +1,6 @@
 ---
 title: Please Pirate
-layout: default
+layout: about
 ---
 
 Please Pirate
