@@ -1,5 +1,6 @@
-pygments: true
 permalink: pretty
+
+pygments: true
 markdown: maruku
 maruku:
     use-tex: false
