@@ -21,7 +21,7 @@ header {
 }
 header h1 {
 	color: #999;
-	text-shadow: 0 -3px 0 #000;
+	text-shadow: 0 -2px 0 #000;
 	font-size: 58px;
 	padding-top: 15px;
 	letter-spacing: -0.025em; /* argh! */
