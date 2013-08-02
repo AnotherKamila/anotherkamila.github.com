@@ -163,6 +163,8 @@ ul, ol {
 a[rel=footnote], a[rev=footnote] {
 	border-bottom: none;
 	font-style: italic;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 a[rel=footnote]:hover, a[rev=footnote]:hover {
 	border-bottom: none;
