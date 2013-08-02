@@ -9,7 +9,7 @@ TODO
 
 # License
 
-Unless otherwise noted, all content of this website is [free](/LICENSE). However, there is a problem with the public domain in some countries; let me know if you can suggest "more free" licensing options.
+Unless otherwise noted, all content of this website is [as free as possible](/LICENSE). However, there is a problem with the public domain in some countries; let me know if you can suggest "more free" licensing options.
 
 # Website Source
 

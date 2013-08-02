@@ -4,10 +4,6 @@ tagline: partitions, filesystems, UEFI+BIOS boot
 layout: configs_post
 ---
 
-#### This poor draft of an article is not finished yet! I am just publishing it in order to force myself into writing it before I forget everything.
-
-My X1 Carbon has a 256GB SanDisk SD5SG2256G1052E SSD (and it's blazing fast :P).
-
 What I wanted:
 
 - a UEFI boot without a separate bootloader (i.e. bootstrap by the kernel EFISTUB loader)
@@ -19,6 +15,8 @@ What I did not want:
 - dualboot ;-)
 
 <!--more-->
+
+By the way, my X1 Carbon has a 256GB SanDisk SD5SG2256G1052E SSD (and it's blazing fast :P).
 
 Partition Table
 ---------------
