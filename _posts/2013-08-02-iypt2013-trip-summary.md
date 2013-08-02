@@ -6,6 +6,8 @@ categories: [ personal, iypt2013 ]
 
 {% assign pic_root = '/photos/iypt2013/' %}
 
+**Not finished yet — published mainly in order to force me to finish it!**
+
 I thought writing a few (photo-accompanied) words about my experiences on this year's IYPT could be a good idea, so here it is.
 
 <!--more-->
