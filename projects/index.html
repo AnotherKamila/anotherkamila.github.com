@@ -1,17 +1,22 @@
 ---
 title: My Projects
 layout: projects
+
+projects:
+    - name: iypt2013
+      desc: IYPT 2013 - my presentations
+    - name: trojsten-web
+      desc: The Grand Unified Trojsten (Web + Database)
+    - name: spevnik
+      desc: My awesome HTML5 songbook + sheet music organizer
 ---
 
 <section>
     <ul class="projects-list">
-        <li>
-            <a href="trojsten"><img class="icon" src="trojsten/icon.png" alt="project icon" /><h1>The Grand Unified Trojsten (e.g Database)</h1></a>
-            <small>repo coming soon...</small>
-        </li>
-        <li>
-            <a href="spevnik"><img class="icon" src="spevnik/icon.png" alt="project icon" /><h1>My Awesome HTML5 songbook + sheet music organizer</h1></a>
-            <small>repo coming soon...</small>
-        </li>
+        {% for item in page.projects %}
+            <li>
+                <a href="{{ item.name }}"><img class="icon" src="{{ item.name }}/icon.png" alt="project icon" /><h1>{{ item.desc }}</h1></a>
+            </li>
+        {% endfor %}
     </ul>
 </section>
