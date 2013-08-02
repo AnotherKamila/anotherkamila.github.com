@@ -3,6 +3,14 @@ title: About
 layout: about
 ---
 
-This will be a page containing info about me as well as about this page one day.
+# About Me
 
-For now, you can at least look at the repo of this page at [github.com/AnotherKamila/anotherkamila.github.com](http://github.com/AnotherKamila/anotherkamila.github.com).
+TODO
+
+# License
+
+Unless otherwise noted, all content of this website is [free](/LICENSE). However, there is a problem with the public domain in some countries; let me know if you can suggest "more free" licensing options.
+
+# Website Source
+
+The repo of this site can be found at [github.com/AnotherKamila/anotherkamila.github.com](http://github.com/AnotherKamila/anotherkamila.github.com).
