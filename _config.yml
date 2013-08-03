@@ -1,9 +1,13 @@
+safe: true
+lsi: false
+pygments: true
+
+url: http://anotherkamila.github.io
 permalink: pretty
 
-pygments: true
+timezone: Europe/Bratislava
+
 markdown: maruku
 maruku:
     use-tex: false
     use-divs: true
-
-url: http://anotherkamila.github.io
