@@ -13,11 +13,11 @@ I thought writing a few (photo-accompanied) words about my experiences on this y
 <!--more-->
 
 
-{% include snippet_aside_img.html pic='P1050373-up-we-go.jpg' desc='Sunset from the window of our plane from VIE to AMS' %}
-{% include snippet_aside_img.html pic='P1050407-up-in-the-sky.jpg' desc='The ice crystals on the plane window signify that the trip was indeed long.' %}
+{% assign pic = 'P1050373-up-we-go.jpg' %}{% assign desc = 'Sunset from the window of our plane from VIE to AMS' %}{% include snippet_aside_img.html %}
+{% assign pic = 'P1050407-up-in-the-sky.jpg' %}{% assign desc = 'The ice crystals on the plane window signify that the trip was indeed long.' %}{% include snippet_aside_img.html %}
 This year's IYPT (and my last IYPT as a participant) took place in Taipei, Taiwan. This meant (among other things) a lot of flying (yay!): we started at the Vienna airport, from where we got to Schiphol, Amsterdam (the [green part](http://www.schiphol.nl/Reizigers/OpSchiphol/SchipholAirportPark.htm) of which I totally loved). The flight from Amsterdam to Taipei took rather long and it was quite enjoyable (we didn't really see the Himalayas, but I loved the view regardless, plus it was my first time in a Boeing 747).
 
-{% include snippet_aside_img.html pic='9372010924_9ebd567925_o.jpg' desc='An obligatory group picture (one of many). \[photo from [here](http://www.flickr.com/photos/2013iypt/9372010924/in/set-72157634798038975)\]' %}
+{% assign pic = '9372010924_9ebd567925_o.jpg' %}{% assign desc = 'An obligatory group picture (one of many). \[photo from [here](http://www.flickr.com/photos/2013iypt/9372010924/in/set-72157634798038975)\]' %}{% include snippet_aside_img.html %}
 Upon arriving at the Taipei (actually Taoyuan) airport, meeting our wonderful guides, taking a group picture and getting out of the building we were greeted by the lovely couple of humidity and heat, which would accompany us for the rest of the week. We then got to [the university](http://www.yzu.edu.tw/index_en.html) campus, had dinner and made ourselves at home at the university dormitory[^entropy]. What followed in the next days were the opening ceremony and physics fights.[^feng]
 
 [^entropy]: of which I am not providing a photo because for me making myself at home implies significantly increasing entropy in the room and therefore rendering it unsuitable for documenting
@@ -36,7 +36,7 @@ Next day we went to the [Yehliu Geopark](http://www.ylgeopark.org.tw/ENG/info/Yl
 
 !TODO a pic of us swimming in the see if such a pic exists; + maybe sth from the geopark
 
-{% include snippet_aside_img.html pic='P1050749-dragonfly.jpg' desc="I managed to take a picture of a dragonfly while it remained still for about half a second. (I'm so proud of it!)" %}
+{% assign pic = 'P1050749-dragonfly.jpg' %}{% assign desc = "I managed to take a picture of a dragonfly while it remained still for about half a second. (I'm so proud of it!)" %}{% include snippet_aside_img.html %}
 In the afternoon we visited a part of the [Yangmingshan National Park](http://english.ymsnp.gov.tw/index.php?option=com_content&view=featured&gp=0&Itemid=104), which was basically a post-volcanic area with a few hot steam vents and a magnificent sulfuric smell. It looked interesting, but I had expected to be allowed to spend a bit more time there after all the trouble of getting there. But at least there were dragonflies.
 
 On the last evening we had a farewell party, where the various teams gave cultural performances. Since my idea including but not limited to a [fujara](http://en.wikipedia.org/wiki/Fujara) was not accepted, we were not planning to do anything, but the singing of the Russians was met with Martin's "We can do better!" and subsequently our improvised singing of a certain Slovak folk song. After the party some people (actually quite a few people) decided to have a beer near the EC and IOC members' hotel, which I unexpectedly decided to join (only without the beer). As I learned after a while, we were apparently invited to dinner by a few random local people, which turned out to be a rather interesting experience well worth the 'last night' occasion. 
