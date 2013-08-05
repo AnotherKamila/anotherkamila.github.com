@@ -6,9 +6,9 @@ categories: [ personal, iypt2013 ]
 
 {% assign pic_root = '/photos/iypt2013/' %}
 
-**Not finished yet — published mainly in order to force me to finish it!**
+I thought writing a few (photo-accompanied) words[^photos] about my experiences on this year's [IYPT](http://iypt.org/) could be a good idea, so here it is.
 
-I thought writing a few (photo-accompanied) words about my experiences on this year's [IYPT](http://iypt.org/) could be a good idea, so here it is.
+[^photos]: To be honest, the original motivation was to publis a few words-accompanied photos.
 
 <!--more-->
 
@@ -22,24 +22,22 @@ Upon arriving at the Taipei (actually Taoyuan) airport, meeting our wonderful gu
 
 [^entropy]: of which I am not providing a photo because for me making myself at home implies significantly increasing entropy in the room and therefore rendering it unsuitable for documenting
 
-[^feng]: I feel obliged to mention my joy at the fact that a certain juror who remembers me from previous IYPT came to the conclusion that now (unlike when I was beginning) I am good at physics too, not just English, which from him is quite a compliment :D
+[^feng]: I feel obliged to mention my joy at the fact that a certain juror who remembers me from previous IYPT came to the conclusion that now (unlike when I was beginning) I am good at physics too, not just English, which I consider to be quite a compliment :-D
 
-The official program for Sunday afternoon was the Shihsanhang Museum of Archaeology, but we decided to split from the group and instead see the almost-tallest building in the world: [Taipei 101](http://en.wikipedia.org/wiki/Taipei_101) among other things. I loved the view (Taipei at night looks fantastic), the scale in itself and, of course, the lovely 660-ton wind damper which was proudly displayed in the center of the structure.
+The official program for Sunday afternoon was the Shihsanhang Museum of Archaeology, but we decided to split from the group and instead see the almost-tallest building in the world: [Taipei 101](http://en.wikipedia.org/wiki/Taipei_101) (among other things). I loved the view (Taipei at night looks fantastic), the scale in itself and, of course, the lovely 660-ton wind damper which was proudly displayed in the center of the structure.
 
-!TODO a picture with the wind damper - get it from Tim (if such a picture exists) - or alternatively one from the observatory
+{% assign pic = 'IMG_3725-wind-damper.jpg' %}{% assign desc = 'The wind damper: a huge steel sphere painted with bright yellow \[Photo by Tim\]' %}{% include snippet_aside_img.html %}
 
 Next came the final physics fight with Singapore, Korea and Switzerland. By the way, the results for all physics fights can be seen at [results.iypt.org/IYPT2013/](http://results.iypt.org/IYPT2013/). After the fight and an exclusive lunch we enjoyed the closing ceremony, which was quite spectacular — the organizers really tried to make it grandiose, and (somewhat unexpectedly) they succeeded (photos [here](http://www.flickr.com/photos/2013iypt/sets/72157634883869225/)). Also, we got funny bamboo plates with the (by the way lovely) IYPT 2013 logo instead of medals.
 
-!TODO pic of the bamboo plates
+{% assign pic = 'IMG_3990-bamboo-plates.jpg' %}{% assign desc = 'Us and our silver bamboo \[Photo by Tim\]' %}{% include snippet_aside_img.html %}
 
 Next day we went to the [Yehliu Geopark](http://www.ylgeopark.org.tw/ENG/info/YlIntroduction_en.aspx) in the morning, which was quite good despite the heat. Then we had an exclusive lunch at some exclusive hotel at the beach, which of course led to eating the exclusive lunch very fast and then running for the sea. Unfortunately the beach looked bad because of the typhoon that had brought quite non-negligible amount of debris (and I presume this is one of the reasons why not many people joined us, the other being the poor hotel employees who didn't really want us to go swim in there), but the swimming was great anyway. We saw crabs and a tiny flying fish. I love the sea!
-
-!TODO a pic of us swimming in the see if such a pic exists; + maybe sth from the geopark
 
 {% assign pic = 'P1050749-dragonfly.jpg' %}{% assign desc = "I managed to take a picture of a dragonfly while it remained still for about half a second. (I'm so proud of it!)" %}{% include snippet_aside_img.html %}
 In the afternoon we visited a part of the [Yangmingshan National Park](http://english.ymsnp.gov.tw/index.php?option=com_content&view=featured&gp=0&Itemid=104), which was basically a post-volcanic area with a few hot steam vents and a magnificent sulfuric smell. It looked interesting, but I had expected to be allowed to spend a bit more time there after all the trouble of getting there. But at least there were dragonflies.
 
-On the last evening we had a farewell party, where the various teams gave cultural performances. Since my idea including but not limited to a [fujara](http://en.wikipedia.org/wiki/Fujara) was not accepted, we were not planning to do anything, but the singing of the Russians was met with Martin's "We can do better!" and subsequently our improvised singing of a certain Slovak folk song. After the party some people (actually quite a few people) decided to have a beer near the EC and IOC members' hotel, which I unexpectedly decided to join (only without the beer). As I learned after a while, we were apparently invited to dinner by a few random local people, which turned out to be a rather interesting experience well worth the 'last night' occasion. 
+On the last evening we had a farewell party, where the various teams gave cultural performances. Since my idea including but not limited to a [fujara](http://en.wikipedia.org/wiki/Fujara) was not accepted, we were not planning to do anything, but the singing of the Russians was met with Martin's "We can do better!" and subsequently our improvised singing of a certain Slovak folk song. After the party some people (actually quite a few people) decided to have a beer near the EC and IOC members' hotel, which I unexpectedly decided to join (only without the beer). As I learned after a while, we were apparently invited to dinner by a few random local people, which turned out to be a rather interesting experience well worth the 'last night' occasion.
 
 <aside class="image">
 	<div style="float: left;">
@@ -58,7 +56,7 @@ On the last evening we had a farewell party, where the various teams gave cultur
 		{{ desc | markdownify }}
 	</div>
 </aside>
-The day of departure was marked by my frantic search for a few things, including the [Longshan Temple](http://www.lungshan.org.tw/en/index.php) (which was a sight well worth the long, long walk, despite the LEDs incorporated in the "traditional" architecture), Chinese incense sticks, a lot of postcards, stamps and a post office (in the end partially solved by a nice Information center officer at the airport), and my boarding pass.
+The day of departure was marked by my frantic search for a few things, including the [Longshan Temple](http://www.lungshan.org.tw/en/index.php) (which was a sight well worth the long, long walk, despite the LEDs incorporated in the "traditional" architecture), Chinese incense sticks, a lot of postcards, stamps and a post office (in the end partially solved by a nice Information center officer at the airport).
 
 I would say that the flight back was nice, but that's not adequate. The flight back (specifically the takeoff at night) was breathtaking. I was amazed back in 2011 when I saw the night Tehran with the lights all the way to the horizon and the mountains beyond, but this was even more impressive -- as we were rising up, the lights lining the shore of the island against the blackness of the ocean wonderfully summed up the impression I had gotten of Taiwan: that of rapid advancement in technology and industry, but also of beautiful nature, friendly people, and wonder.
 
