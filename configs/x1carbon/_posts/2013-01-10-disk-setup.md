@@ -21,7 +21,7 @@ By the way, my X1 Carbon has a 256GB SanDisk SD5SG2256G1052E SSD (and it's blazi
 Partition Table
 ---------------
 
-For UEFI boot, the GPT partition scheme is necessary. Therefore one needs to use `gdisk` instead of
+For UEFI boot, the GPT partition scheme is a good idea. Therefore one needs to use `gdisk` instead of
 `fdisk` to setup partitions.
 
 Here is how I set up mine:
@@ -70,8 +70,8 @@ was a good idea :P
 
 A side note: If a new kernel is installed but does not get copied into `/boot/efi`, it will not
 boot and there will be no error message. Therefore,
-[this](https://wiki.archlinux.org/index.php/UEFI_Bootloaders#Sync_EFISTUB_Kernel_in_UEFISYS_partition_using_Systemd)
-(or other methods listed below) is a great idea.
+[this](https://wiki.archlinux.org/index.php/UEFI_Bootloaders#Systemd)
+(or other methods listed there) is a great idea.
 
 ### BIOS+GRUB
 
@@ -82,7 +82,7 @@ wasn't hard, so it might actually be a good thing O:-)
 
 [^boot_parameters]: There is a patch to get the kernel to read its commandline from a file named
 `linux.conf` in the same directory as the kernel image instead of from the boot menu in the
-firmware, but this works, too.
+firmware, but this works for me, too.
 
 [^boot_chicken]: Does that smell like the good old chicken-and-egg problem? I needed to
 [create an EFI-capable liveUSB](https://wiki.archlinux.org/index.php/UEFI#Create_UEFI_bootable_USB_from_ISO)
