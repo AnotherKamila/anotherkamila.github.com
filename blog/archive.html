@@ -5,10 +5,31 @@ layout: blog
 
 <h1>Blog Archive</h1>
 
+{% comment %} The following are sentinels. {% endcomment %}
+
+{% comment %}
+{% assign curyear = '0' %}
+{% assign curmonth = 'Narwain' %}
+
+<ul class="archive-years-list">
+	<ul class="archive-months-list"><!-- sentinel -->
+    {% for post in site.posts %}
+    	{{post.date | date: "%Y"}}=={{curyear}}
+    	{% if (post.date | date: "%Y") != curyear %}
+    		{% assign curyear = (post.date | date: "%Y") %}
+    		</ul>
+    		<ul class="archive-months-list">
+    	{% endif %}
+    	{{post.title}}
+    {% endfor %}
+	<ul class="archive-months-list">
+</ul>
+{% endcomment %}
+
 <ul class="posts-list">
     {% for post in site.posts %}
         <li>
-        	<a href="{{ post.url }}">{{ post.title }}</a> &nbsp;// <span class="meta">on {{ post.date | date_to_string }}{% unless post.categories == empty %}; filed under {{ post.categories | array_to_sentence_string }}{% endunless %}</span>
+        	<span class="meta date">{{ post.date | date: "%Y %b %d" }}</span><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="meta">{% unless post.categories == empty %}// filed under {{ post.categories | array_to_sentence_string }}{% endunless %}</span>
     	</li>
     {% endfor %}
 </ul>
