@@ -8,7 +8,7 @@ categories: [ personal, iypt2013 ]
 
 I thought writing a few (photo-accompanied) words[^photos] about my experiences on this year's [IYPT](http://iypt.org/) could be a good idea, so here it is.
 
-[^photos]: To be honest, the original motivation was to publis a few words-accompanied photos.
+[^photos]: To be honest, the original motivation was to publish a few words-accompanied photos.
 
 <!--more-->
 
