@@ -53,6 +53,7 @@ header.sitewide .sawtooth {
 	background-position: center 0;
 	bottom: 0;
 	margin-bottom: -11px;
+	z-index: -2;
 }
 footer.sitewide .sawtooth {
 	background-position: center -11px;
