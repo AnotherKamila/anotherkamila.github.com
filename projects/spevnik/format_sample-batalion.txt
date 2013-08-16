@@ -1,0 +1,57 @@
+# this is a comment and is the first thing removed when processing this file
+# files should be in UTF-8
+# amount of whitespace does not matter, but line ends do (in song text)
+
+# the first thing that is not a comment must be a metadata key (or a blank line)
+# metadata keys are case-insensitive
+# everything that is neither metadata nor comment is song text
+# so far, the following are the only metadata allowed
+Title:    Batalion
+Author:   Spirituál Kvintet
+Category: České, Pekné a obľúbené a vôbec názov obsahujúci medzery, Something Something
+          # multiple categories are separated by `,' and optional whitespace (therefore
+          #   names cannot contain `,')
+
+# formatting rules:
+#   - chords: <<Something>> will be bold & placed as superscript (clickable, to
+#     show an image of how to play it)
+#     (or maybe more, @see ./what_it_is_supposed_to_do.text>Dilema s akordami)
+#   - stanzas are blocks separated by blank lines
+#   - if a Something: as a single word on the first line of a stanza exists, it
+#     will be placed to the left and its stanza will be indented properly 
+
+I:
+<<Ami>>Víno <<C>>máš a <<G>>marky<<Ami>>tánku
+dlouhá <<C>>noc <<G>>se <<Ami>>pro<<Emi>>hýří<<Ami>>
+<<Ami>>Víno <<C>>máš a <<G>>chvilku <<Ami>>spánku
+díki <<C>>dí<<G>>ky <<Ami>>ver<<Emi>>bíří<<Ami>>
+
+1:
+<<Ami>>Dříve než se rozední
+kapitán k <<C>>osedlání <<G>>rozkaz <<Ami>>dá<<Emi>>vá
+<<Ami>>ostruhami do slabin
+ko<<G>>ně <<Ami>>po<<Emi>>há<<Ami>>ní
+<<Ami>>Tam na straně polední
+čekají <<C>>ženy, zlaťá<<G>>ky a <<Ami>>slá<<Emi>>va
+<<Ami>>do výstřelů karabin
+zvon <<G>>už <<Ami>>vy<<Emi>>zvá<<Ami>>ní
+
+R:
+<<Ami>>Víno na ku<<C>>ráž a <<G>>pomilovat marky<<Ami>>tánku
+zítra do Bur<<C>>gund bata<<G>>lion <<Ami>>za<<Emi>>mí<<Ami>>ří
+<<Ami>>Víno na ku<<C>>ráž a <<G>>k ránu dvě hodinky <<Ami>>spánku
+Díki, díki <<C>>vám kralov<<G>>ští <<Ami>>ver<<Emi>>bí<<Ami>>ři
+
+2:
+<<Ami>>Rozprášen je batalion
+poslední <<C>>vojáci se <<G>>k zemi <<Ami>>hrou<<Emi>>tí
+<<Ami>>na polštáři z kopretin
+bu<<G>>dou <<Ami>>věč<<Emi>>ně <<Ami>>spát
+<<Ami>>Neplač sladká Marion
+verbíři <<C>>nové chlapce <<G>>přive<<Ami>>dou <<Emi>>ti
+<<Ami>>za královský hermelín
+pad<<G>>ne <<Ami>>kaž<<Emi>>dý <<Ami>>rád
+
+R:
+I+R:
+I:
