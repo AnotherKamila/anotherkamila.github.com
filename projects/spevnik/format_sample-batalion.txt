@@ -1,24 +1,24 @@
-# this is a comment and is the first thing removed when processing this file
-# files should be in UTF-8
-# amount of whitespace does not matter, but line ends do (in song text)
+# - this is a comment and is the first thing removed when processing this file
+# - files should be in UTF-8
+# - amount of whitespace does not matter, but line ends do (in song text)
 
-# the first thing that is not a comment must be a metadata key (or a blank line)
-# metadata keys are case-insensitive
-# everything that is neither metadata nor comment is song text
-# so far, the following are the only metadata allowed
+# - a metadata block at the beginning of the file is allowed (but not required);
+#   it must be a sequence of non-blank lines in the form 'key: value', separated
+#   from the text by a blank line
+# - metadata keys are case-insensitive
+# - so far, all metadata except for Author and Title are ignored
+# - everything that is neither metadata nor comment is song text
 Title:    Batalion
 Author:   Spirituál Kvintet
-Category: České, Pekné a obľúbené a vôbec názov obsahujúci medzery, Something Something
-          # multiple categories are separated by `,' and optional whitespace (therefore
-          #   names cannot contain `,')
+Category: České, Pekné a obľúbené a vôbec názov obsahujúci medzery, Something
+          # multiple values are separated by `,` and optional whitespace
 
 # formatting rules:
 #   - chords: <<Something>> will be bold & placed as superscript (clickable, to
 #     show an image of how to play it)
-#     (or maybe more, @see ./what_it_is_supposed_to_do.text>Dilema s akordami)
 #   - stanzas are blocks separated by blank lines
 #   - if a Something: as a single word on the first line of a stanza exists, it
-#     will be placed to the left and its stanza will be indented properly 
+#     will be considered a label (which may be used and/or useful in the future)
 
 I:
 <<Ami>>Víno <<C>>máš a <<G>>marky<<Ami>>tánku
