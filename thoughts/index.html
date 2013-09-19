@@ -1,11 +1,11 @@
 ---
-title: Blog
+title: Thoughts
 layout: blog
 ---
 
 <ul>
     {% for post in site.posts %}
-        {% unless post.categories contains 'thoughts' %}
+        {% if post.categories contains 'thoughts' %}
     	<article>
 
     		<header>
@@ -31,6 +31,6 @@ layout: blog
         	{% endif %}
 
         </article>
-        {% endunless %}
+        {% endif %}
     {% endfor %}
 </ul>
