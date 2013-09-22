@@ -1,14 +1,14 @@
 ---
 title: The awesome songs/chords organizer (as an HTML5 offline app)
 layout: projects
-forkme: anotherkamila/spevnik2
+forkme: anotherkamila/peknyspevnik
 ---
 
 # {{ page.title }}
 
 This thing might one day become a neat, touch-friendly, and human-friendly songbook/sheet music organizer written as an HTML5 offline app.
 
-**Update**: It's alive! The latest build usually lives at [anotherkamila.github.io/spevnik2/build](http://anotherkamila.github.io/spevnik2/build) and may bite.
+**Update**: It's alive, and has its own domain! The latest build usually lives at [peknyspevnik.tk](http://www.peknyspevnik.tk) and may bite.
 
 The Plan
 --------
@@ -30,13 +30,13 @@ Note that it does not support older browsers (by design). Currently tested only 
 
 Notable things that don't work yet, but are planned:
 
+- online songs database + easy import
 - offline usage
 - keyboard shortcuts
 - better song display, including showing text of repeated stanzas indicated by their labels and showing how to play a chord when clicking on it
 - transposing chords
 - support for displaying other things besides lyrics with chords (notes, tabs, etc.)
 - support for more/arbitrary metadata (via plugins)
-- online songs database + easy import
 - syncing view across devices (when there is a lot of people, manually syncing several computers to show the same thing becomes annoying)
 - plugins
 
