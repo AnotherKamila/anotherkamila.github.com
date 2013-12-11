@@ -1,6 +1,9 @@
 body {
+	font-size: 12pt;
 	background: #fff;
 	margin: 0;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 0.02em;
 }
 
 #wrapper {
@@ -12,6 +15,21 @@ body {
 h1 {
 	margin: 1.4em 0;
 }
+.summary {
+	font-size: 0.6em;
+	font-weight: normal;
+	color: #666;
+	position: relative;
+	top: -0.18em;
+}
+.basic-info { width: 48%; margin: -1em 0; }
+.basic-info:before,
+.basic-info:after {
+	content: " ";
+}
+.basic-info:after { clear: both; }
+.fleft { float: left; }
+.fright { float: right; }
 
 h1, h2, h3, h4 {
 	font-weight: normal;
@@ -69,6 +87,8 @@ img {
 @media print {
 	body {
 		font-size: 10pt;
+		letter-spacing: 0.03em;
+		text-rendering: optimizeLegibility;
 	}
 
 	.page-break {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,20 +8,27 @@
   <body>
     <div id="wrapper">
 
-      <h1><img src="me.jpg" alt="my photo" /><span>Kamila<br />Součková</span></h1>
-      <dl>
-        <dt>summary</dt><dd>passionate about science and technology, freedom, and challenges</dd>
-        <dt>date of birth</dt><dd>1993/12/02</dd>
-        <dt>address</dt><dd>Hálova 14, 851 01, Bratislava, Slovakia</dd>
-        <dt>e-mail</dt><dd><a href="mailto:kamila@vesmir.sk">kamila@vesmir.sk</a></dd>
-        <dt>phone</dt>
-        <dd>+421 944 213 058</dd>
-      </dl>
+      <h1><img src="me.jpg" alt="my photo" /><span>Kamila Součková</span><br /><span class="summary">passionate about science and technology, freedom, and challenges</span></h1>
+
+      <div class="basic-info fleft">
+        <dl>
+          <dt>date of birth</dt><dd>1993/12/02</dd>
+          <dt>address</dt><dd>Hálova 14, 851 01, Bratislava, Slovakia</dd>
+        </dl>
+      </div>
+      <div class="basic-info fright">
+        <dl>
+          <dt>e-mail</dt><dd><a href="mailto:kamila@vesmir.sk">kamila@vesmir.sk</a></dd>
+          <dt>phone</dt><dd>+421 944 213 058</dd>
+        </dl>
+      </div>
+
+      <div style="clear: both;"></div>
 
       <h2><span>Education</span></h2>
       <h3><span>University</span></h3>
       <dl>
-        <dt>entering in September 2013</dt><dd>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Slovakia</dd>
+        <dt>2013 - present</dt><dd>Department of Computer Science, Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Slovakia</dd>
       </dl>
       <h3><span>High school</span></h3>
       <dl>
@@ -31,34 +37,28 @@
       </dl>
       <h2><span>Work & Volunteer Experience</span></h2>
       <dl>
-        <dt>2013 - present</dt><dd>free-lance web developer</dd>
-        <dt>2012 - 2013</dt><dd>developer at MicroStep - MIS (<a href="http://www.microstep-mis.sk/">www.microstep-mis.sk</a>)</dd>
-        <dt>2009 - 2012</dt><dd>web developer (front-end) at Lighting Beetle (<a href="http://www.lbstudio.sk/">www.lbstudio.sk</a>)<br>rich websites/web applications, recently <abbr>HTML5</abbr> + <abbr>CSS3</abbr> (+ progressive enhancement)</dd>
+        <dt>2012 - 2013</dt><dd>software engineer at MicroStep - MIS (<a href="http://www.microstep-mis.sk/">www.microstep-mis.sk</a>)</dd>
+        <dt>2009 - 2012</dt><dd>web developer (front-end) at Lighting Beetle (<a href="http://www.lbstudio.sk/">www.lbstudio.sk</a>)</dd>
       </dl>
-      <p>contributed to several open-source projects as a participant of <a href="http://code.google.com/opensource/gci/">Google Code-In</a></p>
-      <p>helping organize competitions for younger students</p>
-
+      <ul>
+        <li>contributed to several open-source projects as a participant of <a href="http://code.google.com/opensource/gci/">Google Code-In</a></li>
+        <li>helping organize competitions and educational activities for high-school students</li>
+      </ul>
 
       <h2 class="page-break"><span>Skills</span></h2>
       <h3><span>Programming/Scripting Languages</span></h3>
       <ul>
-        <li>C, C++ <span>experienced – using mostly C++ at algorithm competitions</span></li>
-        <li>JavaScript/CoffeeScript <span>experienced – using at work and in most personal projects</span>
-          <ul>
-            <li>experience with Node.js</li>
-          </ul>
-        </li>
-        <li>bash/sh <span>experienced</span></li>
-        <li>Python<span> intermediate</span></li>
-        <li>Ruby, Lua <span>beginner</span></li>
-        <li><abbr>PHP</abbr> <span>intermediate</span></li>
+        <li>C, C++ <span>intermediate – using mostly C++ at algorithm competitions</span></li>
+        <li>JavaScript/CoffeeScript <span>intermediate – using at work and in most personal projects; experience with Node.js</span></li>
+        <li>Python <span>intermediate</span></li>
         <li>learning Haskell, Lisp</li>
-        <li>databases: <abbr>SQL</abbr> (PostgreSQL, MySQL, SQLite), NoSQL (MongoDB)</li>
+        <li>databases: limited experience with <abbr>SQL</abbr> (PostgreSQL, MySQL, SQLite), NoSQL (MongoDB)</li>
+        <li>bash/sh <span>experienced</span></li>
         <li><a href="http://xkcd.com/208/">I know regular expressions!</a></li>
       </ul>
-      <h3><span>Operating Systems Used</span></h3>
+      <h3><span>Operating Systems</span></h3>
       <ul>
-        <li>GNU/Linux (preferred)<span>experienced, including administration</span></li>
+        <li>GNU/Linux (preferred)<span>experienced, including administration to some extent</span></li>
         <li><abbr>UNIX</abbr>/other <abbr>POSIX</abbr>-compliant <span>user level</span></li>
         <li>MS Windows <span>user level</span></li>
       </ul>
@@ -71,25 +71,24 @@
       </ul>
       <h3><span>Other</span></h3>
       <ul>
+        <li>experience giving lectures about science (mainly computer science and astronomy) at various institutions</li>
         <li>algorithmic skills</li>
         <li>security-conscious</li>
-        <li>I pay attention to details</li>
         <li>presentation skills</li>
-        <li>good communication skills</li>
-        <li>experience giving lectures about science (mainly astronomy and computer science) at various institutions</li>
       </ul>
 
-      <h2 class="page-break"><span>Important Competitions and Awards</span></h2>
+      <h2 class="page-break"><span>Awards and Achievements</span></h2>
       <dl>
         <dt>2013</dt><dd><a href="http://www.iypt.org">International Young Physicists’ Tournament</a>: silver medal, 5<sup>th</sup> place</dd>
-                     <dd><a href="http://www.tmfsr.sk">Young Physicists’ Tournament</a>, State round: 2<sup>nd</sup> place/silver medal
-                     <dd>Olympiad in English Language, State round, category 2B: 1<sup>st</sup> place/gold medal
+                     <dd><a href="http://www.tmfsr.sk">Young Physicists’ Tournament</a>, State round: 2<sup>nd</sup> place/silver medal</dd>
+                     <dd>Olympiad in English Language, State round, category 2B: 1<sup>st</sup> place/gold medal</dd>
+                     <dd><a href="http://www.ksp.sk">Correspondence Seminar in Programming</a>, category T (Tough): 1st place</dd>
         <dt>2012</dt><dd><a href="http://www.iypt.org">International Young Physicists’ Tournament</a>: bronze medal</dd>
                      <dd><a href="http://ipsc.ksp.sk">Internet Problem Solving Contest</a>, high-school teams: 26th place</dd>
                      <dd><a href="http://www.tmfsr.sk">Young Physicists’ Tournament</a>, State round: 1st place/gold medal</dd>
                      <dd><a href="http://www.oi.sk">Olympiad in Informatics</a>, State round: 9th place</dd>
-                     <dd>winter series of <a href="http://www.ksp.sk">Correspondence Seminar in Programming</a>, category T (Tough): 1st place</dd>
-                     <dd>winter series of <a href="http://www.ksp.sk">Correspondence Seminar in Programming</a>, category O: 4th place</dd>
+                     <dd><a href="http://www.ksp.sk">Correspondence Seminar in Programming</a>, category T (Tough): 1st place</dd>
+                     <dd><a href="http://www.ksp.sk">Correspondence Seminar in Programming</a>, category O: 4th place</dd>
         <dt>2011</dt><dd><a href="http://www.iypt.org">International Young Physicists’ Tournament</a>: silver medal</dd>
                      <dd><a href="http://ipsc.ksp.sk">Internet Problem Solving Contest</a>, 1-member high-school teams: 17th place</dd>
                      <dd><a href="http://code.google.com/opensource/gci/2011-12">Google Code-In</a>: completed 3 tasks</dd>
@@ -102,9 +101,9 @@
       <h2><span>Free Time Activities</span></h2>
       <ul>
         <li>physics, astronomy, mathematics</li>
-        <li>origami, kirigami and modular origami, other handicrafts</li>
         <li>music (both listening to and playing)</li>
         <li>literature</li>
+        <li>origami, kirigami and modular origami, other handicrafts</li>
         <li>hiking, swimming, cycling</li>
         <li>graphics and design, user experience</li>
       </ul>
