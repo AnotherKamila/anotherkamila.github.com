@@ -1,0 +1,110 @@
+/* Much of this is adapted from https://edwardtufte.github.io/tufte-css/ (which is awesome). */
+
+html { font-size: 15px; text-rendering: optimizeLegibility; }
+
+body {
+	width: 87.5%;
+	max-width: 80em;
+	margin: 4em auto;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        letter-spacing: .03em;
+	font-family: "Liberation Sans", sans-serif;
+	font-size: 11pt;
+	background: #f9f9f9;
+	color: #111;
+}
+
+h1 {
+	font-weight: 400;
+	margin: 1.5rem 0; /* orig: .8em */
+	font-size: 2.2rem;
+	line-height: 1;
+}
+.summary {
+	font-size: 1.31rem;
+	font-weight: normal;
+	font-style: italic;
+	color: #666;
+}
+img {
+	margin-top: 0.1rem;
+	float: left;
+	margin-right: 1.2rem;
+	height: 4.2rem;
+}
+
+.basic-info { width: 48%; margin: -1em 0; }
+.basic-info:before,
+.basic-info:after {
+	content: " ";
+}
+.basic-info:after { clear: both; }
+.fleft { float: left; }
+.fright { float: right; }
+
+h2, h3 { color: #0af; font-style: italic; font-weight: 400; }
+h2 {
+	font-size: 1.7rem;
+	margin: 1.7rem 0;
+	position: relative;
+}
+h2 span {
+	background: #f9f9f9;
+	display: inline-block;
+	padding: 0 0.6em 0 0;
+}
+h2:after {
+	position: absolute;
+	top: 0.6em;
+	z-index: -1;
+	content: '';
+	display: block;
+	width: 100%;
+	border-top: 1px solid #0af;
+}
+h3 {
+     font-size: 1.31rem;
+     margin-top: 1rem;
+     margin-bottom: 0;
+}
+
+dl { margin: 1em 0; }
+dt { font-weight: bold; }
+
+ul li span {
+	font-style: italic;
+	color: #666;
+	margin-left: 0.6em;
+}
+
+/* Links: replicate underline that clears descenders */
+a:link, a:visited { color: inherit; }
+
+a:link { text-decoration: none;
+         background: -webkit-linear-gradient(#f9f9f9, #f9f9f9), -webkit-linear-gradient(#f9f9f9, #f9f9f9), -webkit-linear-gradient(#333, #333);
+         background: linear-gradient(#f9f9f9, #f9f9f9), linear-gradient(#f9f9f9, #f9f9f9), linear-gradient(#333, #333);
+         -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+         -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+         background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+         background-repeat: no-repeat, no-repeat, repeat-x;
+         text-shadow: 0.03em 0 #f9f9f9, -0.03em 0 #f9f9f9, 0 0.03em #f9f9f9, 0 -0.03em #f9f9f9, 0.06em 0 #f9f9f9, -0.06em 0 #f9f9f9, 0.09em 0 #f9f9f9, -0.09em 0 #f9f9f9, 0.12em 0 #f9f9f9, -0.12em 0 #f9f9f9, 0.15em 0 #f9f9f9, -0.15em 0 #f9f9f9;
+         background-position: 0% 100%, 100% 100%, 0% 100%; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 94%, 94%, 94%; } }
+
+a:link::selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+                    background: #b4d5fe; }
+
+a:link::-moz-selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+                         background: #b4d5fe; }
+
+@media print {
+	body {
+		font-size: 10pt;
+	}
+
+	.page-break {
+		page-break-before: always;
+	}
+}
+
