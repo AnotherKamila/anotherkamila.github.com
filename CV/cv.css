@@ -4,19 +4,19 @@ html { font-size: 15px; text-rendering: optimizeLegibility; }
 
 body {
 	width: 87.5%;
-	max-width: 80em;
+	max-width: 70rem;
 	margin: 4em auto;
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-family: Carlito, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 12pt;
         letter-spacing: .03em;
-	font-family: "Liberation Sans", sans-serif;
-	font-size: 11pt;
 	background: #f9f9f9;
 	color: #111;
+	line-height: 1.2;
 }
 
 h1 {
 	font-weight: 400;
-	margin: 1.5rem 0; /* orig: .8em */
+	margin: 1.5rem 0;
 	font-size: 2.2rem;
 	line-height: 1;
 }
@@ -80,6 +80,8 @@ ul li span {
 /* Links: replicate underline that clears descenders */
 a:link, a:visited { color: inherit; }
 
+@media screen {
+
 a:link { text-decoration: none;
          background: -webkit-linear-gradient(#f9f9f9, #f9f9f9), -webkit-linear-gradient(#f9f9f9, #f9f9f9), -webkit-linear-gradient(#333, #333);
          background: linear-gradient(#f9f9f9, #f9f9f9), linear-gradient(#f9f9f9, #f9f9f9), linear-gradient(#333, #333);
@@ -88,9 +90,7 @@ a:link { text-decoration: none;
          background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
          background-repeat: no-repeat, no-repeat, repeat-x;
          text-shadow: 0.03em 0 #f9f9f9, -0.03em 0 #f9f9f9, 0 0.03em #f9f9f9, 0 -0.03em #f9f9f9, 0.06em 0 #f9f9f9, -0.06em 0 #f9f9f9, 0.09em 0 #f9f9f9, -0.09em 0 #f9f9f9, 0.12em 0 #f9f9f9, -0.12em 0 #f9f9f9, 0.15em 0 #f9f9f9, -0.15em 0 #f9f9f9;
-         background-position: 0% 100%, 100% 100%, 0% 100%; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 94%, 94%, 94%; } }
+         background-position: 0% 94%, 100% 94%, 0% 94%; }
 
 a:link::selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
                     background: #b4d5fe; }
@@ -98,13 +98,12 @@ a:link::selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #
 a:link::-moz-selection { text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
                          background: #b4d5fe; }
 
-@media print {
-	body {
-		font-size: 10pt;
-	}
-
-	.page-break {
-		page-break-before: always;
-	}
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) { a:link { background-position-y: 97%, 97%, 97%; } }
 
+@media print {
+	html { font-size: 14px; }
+	body { font-size: 9pt; background: #fff; margin: 0 auto; }
+	@page { size: auto; margin: 19mm 16mm; }
+	.page-break { page-break-before: always; }
+}
